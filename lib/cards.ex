@@ -3,6 +3,9 @@ defmodule Cards do
     Module for creating a deck of cards, shuffling and dealing it
   """
 
+  @doc """
+    Returns a list of playing cards
+  """
   def create_deck do
     values = ["Ace", "Two", "Three", "Four", "Five"]
     suits = ["Spades", "Clubs", "Hearts", "Diamonds"]
