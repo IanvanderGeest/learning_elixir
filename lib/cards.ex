@@ -5,6 +5,10 @@ defmodule Cards do
 
   @doc """
     Returns a list of playing cards
+
+  ## Examples
+      iex> deck = Cards.create_deck
+      ["Ace of Spades", "Ace of Clubs"...]
   """
   def create_deck do
     values = ["Ace", "Two", "Three", "Four", "Five"]
