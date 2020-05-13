@@ -7,8 +7,7 @@ defmodule Cards do
     Returns a list of playing cards
 
   ## Examples
-      iex> deck = Cards.create_deck
-      ["Ace of Spades", "Ace of Clubs"...]
+      iex> Cards.create_deck
   """
   def create_deck do
     values = ["Ace", "Two", "Three", "Four", "Five"]
@@ -19,10 +18,24 @@ defmodule Cards do
     end
   end
 
+  @doc """
+    Shuffles and returns a new deck
+
+  ## Examples
+      iex> deck = Cards.create_deck
+      iex> Cards.shuffle_deck(deck)
+  """
   def shuffle_deck(deck) do
     Enum.shuffle(deck)
   end
 
+  @doc """
+    Shuffles deck and returns two random cards
+
+  ## Examples
+      iex(1)> deck = Cards.create_deck
+      iex(2)> Cards.deal(deck)
+  """
   def deal(deck) do
     shuffled = shuffle_deck(deck)
 
